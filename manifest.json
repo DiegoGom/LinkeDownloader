@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "LinkeDownloader",
+  "description": "Download video for LinkedIn Learn.",
+  "version": "1.0.0",
+  "author": "Lair_nula",
+  
+  "icons": {
+              "128": "/img/icon_128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+   "host_permissions": [
+    "https://*.linkedin.com/learning/*"
+  ],
+  "background": {
+      "service_worker": "/js/background.js"
+  }
+}

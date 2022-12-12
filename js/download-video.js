@@ -37,6 +37,7 @@ function player_exist(){
 
 /*Add button and obtain data video*/
 function add_button(){
+	$(".vd-wnk2i").remove();
 	let url_video=$("#"+id_player).attr("src");
 	let obtain_name_video=$("."+subtitle_class).text();
 	let name1 = encodeURIComponent(obtain_name_video);
@@ -44,7 +45,7 @@ function add_button(){
 	let name3 = name2.replace(/%20%20/g, "");
 	let name4 = name3.replace(/%20/g, " ");
 	let name_video=name4;
-	$("."+ul_class_append).append("<li><button id='"+id_download_button+"' data-name='"+name_video+"' data-video='"+url_video+"'>Download</buton></li>");
+	$("."+ul_class_append).append("<li><button class='vd-wnk2i' id='"+id_download_button+"' data-name='"+name_video+"' data-video='"+url_video+"'>Download</buton></li>");
 }
 
 /*Random numbers*/

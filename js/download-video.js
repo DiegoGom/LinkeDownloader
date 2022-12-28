@@ -6,6 +6,11 @@ var ul_class_append="classroom-body__nav-actions";
 var id_download_button="dwn-vde"+getRandomInt(99999)+"";
 var subtitle_class="classroom-nav__subtitle";
 
+
+	if ($( ".vd-wnk2i" ).length ) {
+		$(".vd-wnk2i").remove();
+	}
+
 setTimeout(function (){
 	 if(player_exist()==1){
 
@@ -45,7 +50,7 @@ function add_button(){
 	let name3 = name2.replace(/%20%20/g, "");
 	let name4 = name3.replace(/%20/g, " ");
 	let name_video=name4;
-	$("."+ul_class_append).append("<li><button class='vd-wnk2i' id='"+id_download_button+"' data-name='"+name_video+"' data-video='"+url_video+"'>Download</buton></li>");
+	$("."+ul_class_append).append("<li class='vd-wnk2i'><button id='"+id_download_button+"' data-name='"+name_video+"' data-video='"+url_video+"'>Download</buton></li>");
 }
 
 /*Random numbers*/
